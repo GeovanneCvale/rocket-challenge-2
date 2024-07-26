@@ -1,0 +1,31 @@
+body{
+    background-color: var(--shape-background);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#main-app{
+    width: 80rem;
+    display: grid;
+    grid-template-columns: 25rem 51.25rem;
+    justify-content: center;
+    margin: auto;
+    gap: 1.25rem;
+
+
+    aside{
+        background-image: url(../assets/Background.jpg);
+        overflow: hidden;
+        margin-block: 1.25rem;
+        height: 45.5rem;
+    }
+
+    main{
+        background-color: var(--shape-body);
+        overflow: auto;
+        margin-block: 1.25rem;
+        height: auto;
+        
+    }
+}

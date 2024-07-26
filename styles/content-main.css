@@ -1,0 +1,56 @@
+main{
+    padding-block: 5rem;
+}
+
+#content-main{
+    width: 35rem;
+
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    h2 {
+        font: var(--heading-md);
+        color: var(--text-heading);
+    }
+
+    fieldset{
+        border: none;
+    }
+
+    legend {
+        font: var(--heading-sm);
+        color: var(--text-heading);
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    label{
+        display: inline-block;
+        margin-bottom: .75rem;
+        font: var(--body-sm);
+        color: var(--text-body);
+    }
+
+    input:focus{
+        outline: none;
+    }
+
+    input[type="text"]{
+        background-color: var(--input-base);
+        border: 1px solid var(--input-stroke);
+        color: var(--input-placeholder);
+        width: 100%;
+        padding: .813rem 1rem;
+        border-radius: .5rem;
+        font: var(--body-md);
+        font-weight: 100;
+
+        &:hover, &:focus{
+            border: 1px solid var(--brand-light);
+        }
+    }
+}
