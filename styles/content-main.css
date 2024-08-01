@@ -39,7 +39,7 @@ main{
         outline: none;
     }
 
-    input[type="text"]{
+    input{
         background-color: var(--input-base);
         border: 1px solid var(--input-stroke);
         color: var(--input-placeholder);
@@ -48,9 +48,46 @@ main{
         border-radius: .5rem;
         font: var(--body-md);
         font-weight: 100;
+        margin-bottom: 1rem;
 
         &:hover, &:focus{
             border: 1px solid var(--brand-light);
+        }
+    }
+
+    .input-wrapper-2{
+        width: 17rem;
+    }
+
+    .flex{
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .radio-wrapper{
+        display: flex;
+        background-color: var(--input-base);
+        border: 1px solid var(--input-stroke);
+        padding: .25rem;
+        border-radius: .5rem;
+        height: 3rem;
+        gap: .25rem;
+        align-items: center;
+
+        label, input {
+            margin-bottom: 0;
+        }
+
+        input[type="radio"]{
+            display: none;
+        }
+
+        .radio-opt{
+            width: 100%;
+            height: 100%;
+            border: 1px solid white;
+            display: flex;
+            align-items: center;
         }
     }
 }
